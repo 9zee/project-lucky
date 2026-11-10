@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin — Our Little World</title>
+    <link rel="stylesheet" href="/admin-files/admin.css">
+</head>
+<body>
+    <main class="container">
+
+        <section id="login">
+            <h1>♡ Our Little World</h1>
+            <p>Painel administrativo</p>
+
+            <form id="loginForm">
+                <input id="senha" type="password" placeholder="Senha administrativa" required>
+                <button>Entrar</button>
+                <p id="erro"></p>
+            </form>
+        </section>
+
+        <section id="painel" hidden>
+            <header>
+                <div>
+                    <h1>Seu espaço</h1>
+                    <p>Personalize o site do casal.</p>
+                </div>
+                <button type="button" id="sair">Sair</button>
+            </header>
+
+            <section class="card">
+                <h2>Mensagem principal</h2>
+                <textarea id="mensagem" placeholder="Escreva sua mensagem..."></textarea>
+            </section>
+
+            <section class="card">
+                <h2>Galeria de fotos</h2>
+
+                <div class="fotos">
+                    <div>
+                        <img id="preview0" alt="Prévia da foto 1">
+                        <label>Foto 1</label>
+                        <input type="file" id="foto0" accept="image/*">
+                        <input id="legenda0" placeholder="Legenda">
+                    </div>
+
+                    <div>
+                        <img id="preview1" alt="Prévia da foto 2">
+                        <label>Foto 2</label>
+                        <input type="file" id="foto1" accept="image/*">
+                        <input id="legenda1" placeholder="Legenda">
+                    </div>
+
+                    <div>
+                        <img id="preview2" alt="Prévia da foto 3">
+                        <label>Foto 3</label>
+                        <input type="file" id="foto2" accept="image/*">
+                        <input id="legenda2" placeholder="Legenda">
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Músicas</h2>
+                <input type="file" id="musicas" accept="audio/*,.m4a" multiple>
+                <div id="listaMusicas"></div>
+            </section>
+
+            <button id="salvar">Salvar alterações</button>
+            <p id="status"></p>
+        </section>
+    </main>
+
+    <script src="/admin-files/admin.js"></script>
+</body>
+</html>

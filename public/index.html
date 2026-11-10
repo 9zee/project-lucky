@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7edf3">
+  <title>Our Little World ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <!-- INTRODUÇÃO DO LUCKY -->
+  <section id="intro" class="intro">
+    <div class="intro-stars"></div>
+
+    <div class="intro-label">A LITTLE WORLD MADE WITH LOVE</div>
+
+    <div class="welcome-scene">
+
+      <div class="intro-wing intro-wing-left">
+        <svg viewBox="0 0 180 150" aria-hidden="true">
+          <path d="M145 120 C100 115 48 90 15 20 C55 38 100 55 145 120Z"/>
+          <path d="M145 120 C95 105 62 75 38 39"/>
+          <path d="M145 120 C100 115 75 95 62 65"/>
+          <path d="M145 120 C112 120 90 108 85 91"/>
+          <path d="M145 120 C125 126 108 120 105 108"/>
+        </svg>
+      </div>
+
+      <div class="lucky-wrap" id="lucky">
+        <div class="speech" id="speech">
+          <span id="speechText">Oii! Eu sou o Lucky! ♡</span>
+        </div>
+
+        <div class="lucky-shadow"></div>
+
+        <svg class="wolf" viewBox="0 0 180 160" role="img" aria-label="Lucky, um lobinho pixelado">
+          <!-- Orelhas -->
+          <g class="ears">
+            <path d="M37 55 L32 12 L66 39Z" fill="#8d7c83"/>
+            <path d="M143 55 L148 12 L114 39Z" fill="#8d7c83"/>
+            <path d="M43 39 L40 23 L57 39Z" fill="#e9b9c9"/>
+            <path d="M137 39 L140 23 L123 39Z" fill="#e9b9c9"/>
+          </g>
+
+          <!-- Corpo -->
+          <path d="M48 91 L48 119 L57 119 L57 142 L76 142 L76 151 L105 151 L105 142 L124 142 L124 119 L133 119 L133 91Z" fill="#b9aab1"/>
+
+          <!-- Cabeça -->
+          <path d="M38 52 L55 35 L125 35 L142 52 L142 101 L125 119 L55 119 L38 101Z" fill="#d9cbd1"/>
+
+          <!-- Topo -->
+          <path d="M55 35 L66 24 L113 24 L125 35Z" fill="#eee1e6"/>
+
+          <!-- Olhos -->
+          <g class="wolf-eyes">
+            <rect x="62" y="69" width="12" height="13" fill="#473b43"/>
+            <rect x="106" y="69" width="12" height="13" fill="#473b43"/>
+            <rect x="65" y="70" width="4" height="4" fill="#fff"/>
+            <rect x="109" y="70" width="4" height="4" fill="#fff"/>
+          </g>
+
+          <!-- Focinho -->
+          <path d="M73 91 L107 91 L116 104 L106 114 L74 114 L64 104Z" fill="#f3e9ed"/>
+          <rect x="85" y="91" width="10" height="7" fill="#51434a"/>
+          <path d="M90 98 L90 105 L84 108 M90 105 L96 108" fill="none" stroke="#51434a" stroke-width="3" stroke-linecap="square"/>
+
+          <!-- Bochechas -->
+          <rect x="48" y="91" width="12" height="7" fill="#e8aabd"/>
+          <rect x="120" y="91" width="12" height="7" fill="#e8aabd"/>
+
+          <!-- Patinhas -->
+          <rect x="60" y="137" width="17" height="9" fill="#8d7c83"/>
+          <rect x="103" y="137" width="17" height="9" fill="#8d7c83"/>
+        </svg>
+      </div>
+
+      <div class="intro-wing intro-wing-right">
+        <svg viewBox="0 0 180 150" aria-hidden="true">
+          <path d="M35 120 C80 115 132 90 165 20 C125 38 80 55 35 120Z"/>
+          <path d="M35 120 C85 105 118 75 142 39"/>
+          <path d="M35 120 C80 115 105 95 118 65"/>
+          <path d="M35 120 C68 120 90 108 95 91"/>
+          <path d="M35 120 C55 126 72 120 75 108"/>
+        </svg>
+      </div>
+
+    </div>
+
+    <button id="skipIntro" class="skip-intro">Pular apresentação →</button>
+  </section>
+
+  <!-- MUNDO PRINCIPAL -->
+  <main id="world" class="world">
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <header class="topbar">
+      <span class="brand">our little world <span>♡</span></span>
+      <span class="topbar-note">made with affection</span>
+    </header>
+
+    <!-- CENÁRIO 3D -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">UM PEQUENO UNIVERSO</span>
+        <h1>Um mundo feito<br>de <em>momentos.</em></h1>
+        <p>Algumas lembranças merecem um lugar especial.</p>
+        <a href="#memories" class="discover-button">Explorar nosso mundo ↓</a>
+      </div>
+
+      <div class="wing-world" id="wingWorld">
+
+        <div class="wing-3d wing-3d-left" id="leftWing">
+          <svg viewBox="0 0 240 190" aria-hidden="true">
+            <defs>
+              <linearGradient id="leftFeather" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fff"/>
+                <stop offset="55%" stop-color="#f2c9d9"/>
+                <stop offset="100%" stop-color="#c98eaa"/>
+              </linearGradient>
+            </defs>
+            <path d="M205 160 C140 153 55 105 17 15 C82 42 157 78 205 160Z" fill="url(#leftFeather)"/>
+            <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8">
+              <path d="M202 158 Q115 110 30 28"/>
+              <path d="M195 153 Q118 125 62 54"/>
+              <path d="M187 147 Q135 137 93 83"/>
+              <path d="M178 142 Q145 147 121 111"/>
+              <path d="M168 137 Q150 153 145 139"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="wing-center">
+          <div class="floating-heart">♡</div>
+          <div class="wing-orbit"></div>
+          <span>together</span>
+        </div>
+
+        <div class="wing-3d wing-3d-right" id="rightWing">
+          <svg viewBox="0 0 240 190" aria-hidden="true">
+            <defs>
+              <linearGradient id="rightFeather" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#fff"/>
+                <stop offset="55%" stop-color="#d9d0f4"/>
+                <stop offset="100%" stop-color="#a99acb"/>
+              </linearGradient>
+            </defs>
+            <path d="M35 160 C100 153 185 105 223 15 C158 42 83 78 35 160Z" fill="url(#rightFeather)"/>
+            <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8">
+              <path d="M38 158 Q125 110 210 28"/>
+              <path d="M45 153 Q122 125 178 54"/>
+              <path d="M53 147 Q105 137 147 83"/>
+              <path d="M62 142 Q95 147 119 111"/>
+              <path d="M72 137 Q90 153 95 139"/>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOTOS -->
+    <section class="memories-section" id="memories">
+      <div class="section-heading">
+        <span class="eyebrow">CAPÍTULOS ESPECIAIS</span>
+        <h2>Pequenas lembranças, <em>grandes sentimentos.</em></h2>
+        <p>Dois momentos guardados com carinho.</p>
+      </div>
+
+      <div class="memory-grid">
+        <article class="memory-card" id="card1">
+          <div class="photo-frame">
+            <img id="photo1" src="" alt="Primeira lembrança">
+            <div class="photo-placeholder" id="placeholder1">♡</div>
+          </div>
+          <p class="memory-caption" id="caption1">Uma lembrança especial</p>
+          <span class="card-number">01 — OUR MEMORY</span>
+        </article>
+
+        <article class="memory-card" id="card2">
+          <div class="photo-frame">
+            <img id="photo2" src="" alt="Segunda lembrança">
+            <div class="photo-placeholder" id="placeholder2">♡</div>
+          </div>
+          <p class="memory-caption" id="caption2">Um momento inesquecível</p>
+          <span class="card-number">02 — OUR MEMORY</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="letter-section" id="letterSection">
+      <span class="eyebrow">UMA MENSAGEM ESPECIAL</span>
+      <h2>Algo que foi escrito<br><em>com carinho.</em></h2>
+      <p>Existe uma pequena carta esperando por vocês.</p>
+
+      <button id="openLetter" class="letter-button" type="button">
+        <span class="letter-envelope">
+          <span class="envelope-back"></span>
+          <span class="envelope-paper">♡</span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-front"></span>
+        </span>
+        <span class="letter-button-text">Abrir nossa cartinha</span>
+      </button>
+
+      <div id="letterOverlay" class="letter-overlay" aria-hidden="true">
+        <div class="letter-paper">
+          <button id="closeLetter" class="close-letter" aria-label="Fechar carta">×</button>
+          <span class="letter-decoration">♡</span>
+          <span class="eyebrow">PARA VOCÊS</span>
+          <h2>Com carinho...</h2>
+          <div id="letterMessage" class="letter-message">
+            Uma mensagem especial estará aqui.
+          </div>
+          <span class="letter-signature">com amor, ♡</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÚSICA -->
+    <section class="music-section">
+      <span class="music-note">♫</span>
+      <p>A trilha sonora desse pequeno mundo.</p>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+
+    <!-- DESPEDIDA -->
+    <section class="goodbye-section" id="goodbye">
+      <div class="goodbye-lucky" id="goodbyeLucky">
+        <div class="goodbye-speech" id="goodbyeSpeech">
+          Chegamos ao final, me despeço pelo meu dono...
+        </div>
+        <div class="mini-lucky">
+          <span>૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</span>
+        </div>
+      </div>
+
+      <div class="cmd-handle" id="cmdHandle">
+        <span></span><span></span><span></span>
+      </div>
+
+      <div class="cmd-window" id="cmdWindow">
+        <div class="cmd-titlebar">
+          <div class="cmd-dots">
+            <i></i><i></i><i></i>
+          </div>
+          <span>lucky_terminal.exe</span>
+          <span class="cmd-version">LUT999Z</span>
+        </div>
+
+        <div class="cmd-content">
+          <p class="cmd-system">Microsoft Windows [Version 10.0.19045.0]</p>
+          <p class="cmd-system">(c) LUT999Z. Todos os direitos reservados.</p>
+          <br>
+          <p><span class="cmd-path">C:\LUCKY\FINAL&gt;</span> executar_despedida.exe</p>
+          <br>
+          <div id="cmdText" class="cmd-text"></div>
+          <span class="cmd-cursor">_</span>
+        </div>
+      </div>
+
+      <button id="replayGoodbye" class="replay-goodbye">Rever despedida ↻</button>
+    </section>
+
+    <footer class="footer">
+      <span>feito com carinho ♡</span>
+      <span>by lut999z 🪽</span>
+    </footer>
+
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
